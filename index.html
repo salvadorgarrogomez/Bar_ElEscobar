@@ -9,6 +9,31 @@
   <link rel="stylesheet" href="Estilos.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4012932424143362"
     crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.6/cookieconsent.min.js"></script>
+
+  <script>
+    window.addEventListener("load", function () {
+      window.cookieconsent.initialise({
+        "palette": {
+          "popup": {
+            "background": "#000"
+          },
+          "button": {
+            "background": "#f1d600"
+          }
+        },
+        "theme": "classic",
+        "position": "bottom-right",
+        "content": {
+          "message": "Este sitio web utiliza cookies para mejorar su experiencia.",
+          "dismiss": "Aceptar",
+          "link": "Leer más",
+          "href": "https://www.barelescobar.netlify.app/politica-privacidad.html"
+        }
+      });
+    });
+  </script>
+
 </head>
 
 <body>
