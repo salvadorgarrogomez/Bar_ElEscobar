@@ -103,6 +103,14 @@ iframe {
     margin: 0 auto 20px; /* Margen inferior para separar la imagen del título */
 }
 
+/* Media query para pantallas más pequeñas (móviles) */
+@media (max-width: 600px){
+    .imagen-portada{
+        width: 100%;
+        max-width: none;
+    }
+}
+
 
 #google_translate_element {
     position: fixed;
