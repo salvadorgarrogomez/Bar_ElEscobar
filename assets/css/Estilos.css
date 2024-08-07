@@ -146,4 +146,6 @@ iframe {
     color: #333; /* Color del texto */
 }
 
-
+footer div a {
+    color: white; 
+}

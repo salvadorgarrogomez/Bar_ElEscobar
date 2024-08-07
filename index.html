@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="assets/css/Estilos.css">
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4012932424143362"
     crossorigin="anonymous"></script>
-    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css">
+
+
 </head>
 
 <body>
@@ -72,9 +74,34 @@
     <script type="text/javascript"
       src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#000"
+            },
+            "button": {
+              "background": "#f1d600"
+            }
+          },
+          "theme": "classic",
+          "content": {
+            "message": "Este sitio utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio web.",
+            "dismiss": "Aceptar",
+            "link": "Más información",
+            "href": "pages/politica_de_cookies.html"
+          }
+        });
+      });
+    </script>
     <!-- Información de contacto -->
     <p>Teléfenos de contacto (reservas): </p>
     <p><b>623191754 | 683572682</b></p>
+    <div>
+      <a href="politica_de_privacidad.html" target="_blank">Politica de privacidad</a>
+    </div>
   </footer>
 </body>
 
