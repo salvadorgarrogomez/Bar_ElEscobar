@@ -35,6 +35,17 @@
                 <h3>32. Agua grande</h3>
                 <p>1.50 € </p>
             </div>
+            <div class="menu">
+                <!-- Inclusion dinamica de platos -->
+                {{ range where .Pages "Params.category" "Refrescos" }}
+                <div class="plato">
+                    <h3>{{ .Title }}</h3>
+                    <p>{{ .Params.price }} €</p>
+                    <!-- Si incluyes imágenes -->
+                    <!-- <img src="{{ .Params.image }}" alt="{{ .Title }}"> -->
+                </div>
+                {{ end }}
+            </div>
         </div>
     </form>
     <h2>-----------------------------------------------------------------------------------------</h2>
