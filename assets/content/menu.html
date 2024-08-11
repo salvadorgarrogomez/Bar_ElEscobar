@@ -1,0 +1,13 @@
+<!-- layouts/_default/single.html -->
+{{ define "main" }}
+<div class="menu">
+    {{ range where .Pages "Params.category" "Arroces" }}
+    <div class="plato">
+        <h3>{{ .Title }}</h3>
+        <p>{{ .Params.price }} €</p>
+        <!-- Si incluyes imágenes -->
+        <!-- <img src="{{ .Params.image }}" alt="{{ .Title }}"> -->
+    </div>
+    {{ end }}
+</div>
+{{ end }}

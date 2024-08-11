@@ -7,7 +7,7 @@ public_folder: "/assets/images" # Ruta pública para acceder a las imágenes
 collections:
   - name: "menu" # Nombre de la colección
     label: "Plato o bebida de la carta" # Etiqueta en el CMS
-    folder: "pages/" # Carpeta donde se almacenan los archivos de contenido
+    folder: "assets/content/menu" # Carpeta donde se almacenan los archivos de contenido
     create: true
     slug: "{{slug}}" # Nombre del archivo basado en el título
     fields: # Campos del contenido
