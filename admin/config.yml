@@ -1,0 +1,17 @@
+backend:
+  name: git-gateway
+  branch: main # Nombre de la rama en GitHub donde se guardarán los cambios
+media_folder: "assets/images" # Carpeta donde se almacenan las imágenes
+public_folder: "/assets/images" # Ruta pública para acceder a las imágenes
+
+collections:
+  - name: "menu" # Nombre de la colección
+    label: "Menu" # Etiqueta en el CMS
+    folder: "content/menu" # Carpeta donde se almacenan los archivos de contenido
+    create: true
+    slug: "{{slug}}" # Nombre del archivo basado en el título
+    fields: # Campos del contenido
+      - { label: "Title", name: "title", widget: "string" }
+      #- { label: "Image", name: "image", widget: "image" }
+      #- { label: "Description", name: "description", widget: "text" }
+      - { label: "Price", name: "price", widget: "string" }
