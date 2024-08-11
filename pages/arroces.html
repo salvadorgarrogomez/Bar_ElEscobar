@@ -28,17 +28,6 @@
                 <p class="racion_completa"></p>
                 <p>11.00 € </p>
             </div>
-            <div class="menu">
-                <!-- Inclusion dinamica de platos -->
-                {{ range where .Pages "Params.category" "Arroces" }}
-                <div class="plato">
-                    <h3>{{ .Title }}</h3>
-                    <p>{{ .Params.price }} €</p>
-                    <!-- Si incluyes imágenes -->
-                    <!-- <img src="{{ .Params.image }}" alt="{{ .Title }}"> -->
-                </div>
-                {{ end }}
-            </div>
         </div>
     </form>
     <h2>-----------------------------------------------------------------------------------------</h2>
@@ -55,16 +44,6 @@
                 <h3>76. Fideuá de marisco</h3>
                 <p class="racion_completa"></p>
                 <p>11.00 € </p>
-            </div>
-            <div class="menu">
-                <!--  Inclusion dinamica de platos -->
-                {{ range where .Pages "Params.category" "Fideuá" }}
-                <div class="plato">
-                    <h3>{{ .Title }}</h3>
-                    <p>{{ .Params.price }} €</p>
-                    <!-- <img src="{{ .Params.image }}" alt="{{ .Title }}"> -->
-                </div>
-                {{ end }}
             </div>
         </div>
     </form>
